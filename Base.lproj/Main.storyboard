@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VLs-ik-lw0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="xbX-4H-M8l">
+            <objects>
+                <tableViewController id="VLs-ik-lw0" customClass="TableViewController" customModule="SDWebImageTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="298" sectionHeaderHeight="28" sectionFooterHeight="28" id="Tes-By-uGq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="298" id="Ecs-eC-57W">
+                                <rect key="frame" x="0.0" y="28" width="375" height="298"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ecs-eC-57W" id="LJC-Sd-70R">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="297.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6o6-Lr-dx2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="297.5"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="6o6-Lr-dx2" secondAttribute="trailing" id="4Jy-s8-7Re"/>
+                                        <constraint firstAttribute="bottom" secondItem="6o6-Lr-dx2" secondAttribute="bottom" id="5g7-gX-26T"/>
+                                        <constraint firstItem="6o6-Lr-dx2" firstAttribute="width" secondItem="LJC-Sd-70R" secondAttribute="width" id="E2I-uD-vdA"/>
+                                        <constraint firstItem="6o6-Lr-dx2" firstAttribute="height" secondItem="LJC-Sd-70R" secondAttribute="height" id="E7d-uF-Kzx"/>
+                                        <constraint firstItem="6o6-Lr-dx2" firstAttribute="leading" secondItem="LJC-Sd-70R" secondAttribute="leading" id="dI4-d5-utH"/>
+                                        <constraint firstItem="6o6-Lr-dx2" firstAttribute="top" secondItem="LJC-Sd-70R" secondAttribute="top" id="fKw-ef-1CS"/>
+                                        <constraint firstItem="6o6-Lr-dx2" firstAttribute="centerX" secondItem="LJC-Sd-70R" secondAttribute="centerX" id="upQ-hZ-7Bh"/>
+                                        <constraint firstItem="6o6-Lr-dx2" firstAttribute="centerY" secondItem="LJC-Sd-70R" secondAttribute="centerY" id="vrU-ib-51W"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VLs-ik-lw0" id="SDx-mv-7Xk"/>
+                            <outlet property="delegate" destination="VLs-ik-lw0" id="6yR-GU-glj"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XSf-gc-mQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.59999999999999" y="241.52923538230885"/>
+        </scene>
+    </scenes>
+</document>
